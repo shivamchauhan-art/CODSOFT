@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Calculator Styling */
+#calculator {
+    background-color: #333;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 545px;
+}
+
+/* Display Input */
+#display {
+    background-color: #1d1d1d;
+    color: #fff;
+    font-size: 4rem;
+    text-align: right;
+    padding: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 60px;
+    outline: none;
+}
+
+/* Keypad Buttons */
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    background-color: #4a4a4a;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a5a5a;
+}
+
+/* Popup buttons (operations) */
+.popup-btn {
+    background-color: #f39c12;
+}
+
+.popup-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Equal button styling */
+.equal {
+    grid-column: span 2;
+    background-color: #2ecc71;
+}
+
+.equal:hover {
+    background-color: #27ae60;
+}
+
+/* Clear and backspace buttons */
+button:nth-child(17), button:nth-child(18) {
+    background-color: #e74c3c;
+}
+
+button:nth-child(17):hover, button:nth-child(18):hover {
+    background-color: #c0392b;
+}
